@@ -1,3 +1,5 @@
+import 'bootstrap/dist/js/bootstrap.bundle.js';
+import 'bootstrap/dist/css/bootstrap.css';
 import './style.css';
 
 function kep(){
@@ -17,7 +19,9 @@ function szin(){
     let szinek =document.getElementById('szin').value;
     document.getElementById('kep').style.borderColor=szinek;
 }
+
 document.getElementById('url').addEventListener('change', kep);
 document.getElementById('width').addEventListener('change', szelessegvaltozas);
 document.getElementById('vastagsag').addEventListener('change', kepkeret);
 document.getElementById('szin').addEventListener('input', szin);
+
